@@ -1,7 +1,7 @@
 define(['../model/List', '../../templates/task/List'], function (ModelListView) {
     return ModelListView.extend({
         collection: 'tasks',
-        template: 'taskList',
+        template: 'task.list',
         events: { 
             'click .edit': 'rowClick',
             'click .delete': 'deleteRow',

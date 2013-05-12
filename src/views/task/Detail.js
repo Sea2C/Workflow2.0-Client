@@ -7,7 +7,7 @@ define(['../../templates/task/View'], function () {
             var me = this,
                 model = me.model.toJSON();
             
-            dust.render('task', model, function (error, output) {
+            dust.render('task.view', model, function (error, output) {
                 if (error) {
                     console.log(arguments);
                     alert('An unexpected rendering error has occurred');
